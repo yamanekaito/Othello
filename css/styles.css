@@ -1,0 +1,12 @@
+table {
+  background-color:black;
+  margin:50px auto;
+  
+}
+
+
+table tbody th {
+  height:60px;
+  width:60px;
+  background-color:green;
+}
