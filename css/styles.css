@@ -9,4 +9,9 @@ table tbody th {
   height:60px;
   width:60px;
   background-color:green;
+  text-align:center;
+  line-height:60px;
+  font-size:60px; 
+  color:white;
+  cursor:pointer;
 }
