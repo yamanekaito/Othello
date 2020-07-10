@@ -1,30 +1,25 @@
 'use strict'
 {
-  let lines = [];
-  document.querySelectorAll('tr').forEach((p,index) => {
-    p.classList.add(`line${index}`);
-    p = [];
-    lines.push(p);
-  })  
-  console.log(lines);
-  
-  const line1 = document.querySelector('line1');
 
-  document.getElementByClassName('box').forEach((p,index) => {
-    p = 4;
-    line1.push(p);
-  })
+  var fig = [];
+  for (let i = 0; i < 8 ; i ++ ) {
+    fig[i] = [];
+  }
 
-  console.log(line1);
-  
-  // cosnt line1 = document.querySelector('line1')
-  
-  // document.querySelectorAll('line1' > 'th').forEach((p.index) => {
-    
-  // })
+  fig[4][4] = '○';
+  fig[6][2] = '●';
 
-  // p.querySelectorAll('th').forEach((x,number) => {
-  //   x = 'element' + number;
-  //   p.push(x);
-  // })
+  for (let row = 0;row < 8; row ++) {
+    const tr = document.createElement('tr');
+    for (let col = 0; col < 8 ; col ++ ) {
+      const td = document.createElement('td');
+      td.textContent = fig[col][row];
+      tr.appendChild(td);
+    }
+    document.querySelector('tbody').appendChild(tr);
+  }
+  
+
+  var turn = true;
+
 }
