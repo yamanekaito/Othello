@@ -1,6 +1,7 @@
 'use strict'
 {
   var turn = true;
+  const squares = ['●','〇','×']
 
 
   var fig = [];
@@ -28,23 +29,7 @@
     document.querySelector('tbody').appendChild(tr);
   }
 
-  if (turn === false ) {
 
-  }
- 
-  // for (let row = 0;row < 8; row ++) {
-  //   for (let col = 0; col < 8 ; col ++ ) {
-  //     const a = fig[col][row]
-  //     a.addEventListener('click',() => {
-  //       if (turn === true) {
-  //         fig[col][row].textContent = '●';
-  //         turn = false;
-  //       }
-  //     })
-  //   }
-  // }
   
-  
-
 
 }
